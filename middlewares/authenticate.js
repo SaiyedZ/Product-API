@@ -9,7 +9,7 @@ const authenticateToken = (req, res, next) => {
     // return res.status(401).json({ message: 'Unauthorized' });
   }
 
-  try {
+try {
     const user = jwt.verify(token, SECRET_KEY);
     req.user = user;
     next();

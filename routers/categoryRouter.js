@@ -6,7 +6,6 @@ const authenticateToken = require("../middlewares/authenticate");
 const authorizeRoles = require("../middlewares/authorize");
 
 const categoryRouter = Router()
-
 categoryRouter.get('/add-category', authenticateToken, categoryController.addCategoryPage);
 categoryRouter.post('/add-category',uploadImage, authenticateToken, authorizeRoles('admin'), categoryController.addCategory);
 

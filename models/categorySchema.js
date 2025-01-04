@@ -9,7 +9,6 @@ const categorySchema = new mongoose.Schema({
 }, {
     timestamps: true
 })
-
 const categoryModel = mongoose.model("categoryTbl", categorySchema)
 
 module.exports = categoryModel;

@@ -8,7 +8,6 @@ const fs = require("fs");
     const categories = await Category.find();
     return res.render("./pages/view-category", { categories });
   });
-
 exports.addCategory = async (req, res) => {
   if (req.file) {
     req.body.image = req.file.path;
