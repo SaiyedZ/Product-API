@@ -1,7 +1,6 @@
 const {default:mongoose} =require('mongoose')
 
 require('dotenv').config()
-
 let URL = process.env.DB_URL
 
 let db = async()=>{
